@@ -135,7 +135,7 @@ def render_risk_distribution(res_df: pd.DataFrame) -> None:
 # Header
 # ──────────────────────────────────────────────────────────────────────────
 st.title("📊 Mesa de Riesgo — First Payment Default")
-st.caption("Sistema de scoring de riesgo crediticio · BNPL · Powered by XGBoost")
+st.caption("Sistema de scoring de riesgo crediticio")
 
 model_info = fpd_service.metrics
 
@@ -150,7 +150,7 @@ tab1, tab2, tab3 = st.tabs([
 # ══════════════════════════════════════════════════════════════════════════
 with tab1:
     st.subheader("Evaluar un préstamo nuevo")
-    st.caption("Caso de uso: un analista de riesgo necesita evaluar una solicitud puntual antes de aprobarla.")
+    st.caption("Setea tus variables")
 
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -314,8 +314,8 @@ with tab2:
 with tab3:
     st.subheader("Demo con datos de ejemplo")
     st.caption(
-        "Si no tenés un CSV propio a mano, usá esta muestra del dataset original "
-        "para ver el sistema funcionando."
+        "Realiza la carga del archivo CSV para correr el analisis. "
+        "Podes descargar un archivo para ver el formato"
     )
 
     c1, c2, c3, c4 = st.columns(4)
@@ -328,11 +328,7 @@ with tab3:
     with c4:
         st.markdown(f'<div class="metric-card"><h3>{model_info["f1_fpd"]:.3f}</h3><p>F1 FPD</p></div>', unsafe_allow_html=True)
 
-    st.info(
-        "ℹ️ Modelo re-entrenado sin la variable 'Factoring', identificada como data "
-        "leakage: el 93% de los préstamos en mora tenían Factoring=Yes, lo cual "
-        "indica que el campo se actualiza post-originación."
-    )
+
 
     st.divider()
 
