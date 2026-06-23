@@ -314,8 +314,8 @@ with tab2:
 with tab3:
     st.subheader("Demo con datos de ejemplo")
     st.caption(
-        "Realiza la carga del archivo CSV para correr el analisis. "
-        "Podes descargar un archivo para ver el formato"
+        "Aca podras visualizar los resultados de ejemplo de la demo. "
+        "Selecciona la cantidad de prestamos a evaluar."
     )
 
     c1, c2, c3, c4 = st.columns(4)
