@@ -1,0 +1,4 @@
+gmv_usd,loan_amount_usd,down_payment_usd,first_installment_usd,second_installment_usd,third_installment_usd,credit_score,product,product_vertical,order_type
+120.0,90.0,30.0,30.0,30.0,30.0,410,SPLIT_3,Tecnología,First order
+80.0,60.0,20.0,60.0,0,0,350,SPLIT_1,Moda,Follow up order
+200.0,170.0,30.0,28.3,28.3,28.3,290,SPLIT_6,Supermercados,First order

@@ -1,0 +1,28 @@
+{
+  "auc_roc_test": 0.7217757520050627,
+  "auc_roc_cv": 0.7272892116510973,
+  "recall_fpd": 0.744426318651441,
+  "precision_fpd": 0.039920683521418365,
+  "f1_fpd": 0.0757777039743164,
+  "best_params": {
+    "subsample": 0.8,
+    "n_estimators": 100,
+    "min_child_weight": 3,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "gamma": 0,
+    "colsample_bytree": 1.0
+  },
+  "top_features": {
+    "loan_to_gmv_ratio": 0.37283459305763245,
+    "down_payment_ratio": 0.1840294599533081,
+    "Product_SPLIT_3": 0.09100393950939178,
+    "3rd Installment Amount - USD": 0.06114587560296059,
+    "2nd Installment Amount - USD": 0.043425388634204865,
+    "n_cuotas": 0.039927951991558075,
+    "User Credit Score": 0.03707005828619003,
+    "avg_installment_usd": 0.02713668905198574,
+    "installment_to_gmv": 0.02595321647822857,
+    "Product Type Vertical_Hogar": 0.015646547079086304
+  }
+}
